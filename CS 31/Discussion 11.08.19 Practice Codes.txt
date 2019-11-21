@@ -1,0 +1,95 @@
+void findZeroCoords (const int grid[][n], int coords[][2])
+{
+	int c = 0;
+	for (int i = 0; i < m; i++)
+	{
+		for (int k = 0; k < n; k++)
+		{
+			if (grid[i][k] == 0)
+			{
+				coords[c][0] = i;
+				coords[c][1] = k;
+				c++;
+			}
+		}
+	}	
+}
+
+void zeroOut (int grid[][n], int m, const int numZeros)
+{
+	int temp [m][n];
+	for (int i = 0; i < m; i++)
+	{
+		for (int k = 0; k < n; k++)
+		{
+			if (grid[i][k] == 0)
+			{
+				for (int x = 0; x < m; x++)
+				{
+					temp [x][k] = 0;
+				}
+				for (int y = 0; x < n; x++)
+				{
+					temp [i][y] = 0;
+				}
+			}
+		}
+	}
+	
+	grid = temp;
+}
+
+//more efficient ways (just kidding, just playing around) (update: JK, it doesn't work!)
+void zeroOut (int grid[][n], int m, const int numZeros)
+{
+	for (int r = 0; r < m; r++)
+	{
+		if (isZeroColumns(grid, m, r))
+		{
+			changeColumnsToZero(grid,
+		}
+	}
+	for (int c = 0; c < n; c++)
+	{
+		
+	}
+}
+
+bool isZeroRows (int grid[][n], int m, int rowLoc)
+{
+	for (int c = 0; c < m; c++)
+	{
+		if (grid[c][rowLoc] == 0)
+			return true;
+	}
+	return false;
+}
+bool isZeroColoumns (int grid[][n], int columnLoc)
+{
+	for (int c = 0; c < n; c++)
+	{
+		if(grid[columnLoc][c] == 0)
+			return true;
+	}
+	return false;
+}
+void changeRowsToZero (int grid[][n], int m, int r)
+{
+	for (int c = 0; c < m; c++)
+	{
+		if (grid[c][rowLoc] == 0)
+			return true;
+	}
+	return false;
+}
+bool changeColumnsToZero (int grid[][n], int m, int c)
+{
+	for (int c = 0; c < n; c++)
+	{
+		if(grid[columnLoc][c] == 0)
+			return true;
+	}
+	return false;
+}
+
+NVM o.o
