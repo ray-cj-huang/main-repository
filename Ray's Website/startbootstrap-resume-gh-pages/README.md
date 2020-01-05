@@ -1,4 +1,4 @@
-# [Bootstrap Practice] (https://startbootstrap.com/guides/)
+# [Bootstrap Practice](https://startbootstrap.com/guides/)
 
 1st practice with bootstrap to create my personal website. (Still in process ~)
 
