@@ -4,4 +4,4 @@
 
 ## Template
 
-All credited from David Miller ([Source](https://startbootstrap.com/template-overviews/resume/))
+All credited from David Miller ([Source](https://startbootstrap.com/template-overviews/resume/)).
