@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "startbootstrap-resume-gh-pages"
 		}
 	],
 	"settings": {
